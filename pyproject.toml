@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "take-home-etl"
+version = "0.1.0"
+description = ""
+authors = ["Supanit Sukgree <supanit.su@peakengine.com>"]
+readme = "README.md"
+packages = [
+    { include = "etl" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyspark = "^3.3.3"
+pandas = "^2.0.0"
+sqlalchemy = "^2.0.0"
+psycopg2-binary = "^2.9.0"
+pyarrow = "^21.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
